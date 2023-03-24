@@ -14,5 +14,4 @@ func HelloHandler(self *gin.Context) {
 
 func FromHandler(self *gin.Context) {
 	self.JSONP(http.StatusOK, gin.H{})
-
 }
