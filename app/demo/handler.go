@@ -9,4 +9,10 @@ func HelloHandler(self *gin.Context) {
 	self.JSONP(http.StatusOK, gin.H{
 		"message": "hello",
 	})
+
+}
+
+func FromHandler(self *gin.Context) {
+	self.JSONP(http.StatusOK, gin.H{})
+
 }
