@@ -25,6 +25,7 @@ func FromHandler(self *gin.Context) {
 }
 
 func CookiceHandler(self *gin.Context) {
+
 	cookie, err := self.Cookie("key_cookice")
 	if err != nil {
 		cookie = "NOt set"
