@@ -6,8 +6,8 @@ func DemoRouter(r *gin.Engine) {
 	demo := r.Group("/demo")
 	{
 		demo.POST("/form", FromHandler)
-		demo.POST("/cookie", FromHandler)
-
+		demo.POST("/cookice", CookiceHandler)
+		demo.POST("/set_session", SessionHandler)
 	}
 
 }
